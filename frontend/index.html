@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Golden Games - Ludo</title>
+
+  <!-- Telegram Mini App -->
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div class="app">
+
+    <header class="header">
+      <div class="logo">GG</div>
+
+      <div>
+        <h1>Golden Games</h1>
+        <p>Ludo Test</p>
+      </div>
+    </header>
+
+    <div class="game-card">
+
+      <div class="players">
+
+        <div class="player red-player">
+          🔴 Player 1
+          <strong id="player1Score">0</strong>
+        </div>
+
+        <div class="player blue-player">
+          🔵 Player 2
+          <strong id="player2Score">0</strong>
+        </div>
+
+      </div>
+
+      <!-- LUDO BOARD -->
+      <div id="board" class="board"></div>
+
+      <div class="turn">
+        Turn:
+        <strong id="turn">Player 1</strong>
+      </div>
+
+      <!-- DICE -->
+      <div id="dice" class="dice">🎲</div>
+
+      <button id="rollButton">
+        ROLL DICE
+      </button>
+
+      <div id="status" class="status">
+        Press ROLL DICE to start
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
